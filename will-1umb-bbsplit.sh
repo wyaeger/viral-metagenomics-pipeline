@@ -12,8 +12,8 @@
 ## give job 36 hours                        
 #PBS -l walltime=36:00:00 
 
-## use 1 compute node and 4 cpu                                                       
-#PBS -l select=1:ncpus=4:mem=1000GB    
+## use 1 compute node and 190 cpu                                                       
+#PBS -l select=1:ncpus=190:mem=1000GB    
 
 #PBS -m bea
 
