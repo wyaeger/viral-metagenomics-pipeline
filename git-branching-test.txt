@@ -1,0 +1,4 @@
+echo start
+echo this is a git-branching-test
+/bin/sleep 10
+echo finished
