@@ -7,4 +7,5 @@ Pipeline Overview:
 [2.5. Check with FastQC again to make sure Trimmomatic worked]
 3. Removal of spike-ins/synthetic molecules using BBDuk (will-1umb-bbduk.sh)
 4. Decontamination (removal of human, mouse, cat, and dog DNA) using BBSplit (will-1umb-bbsplit.sh)
+[4.5. Subsampling of cleaned reads before assembly––done in this case (at 10%) because of the massive file size––using reformat (will-1umb-reformat.sh]
 5. Scaffold assembly and isolation of viral contigs using metaviralSPAdes (pending; will-1umb-metaviralspades.sh)
