@@ -9,8 +9,8 @@
 ## set the queue                                                                          
 #PBS -q route                                                                   
 
-## give job 72 hours                        
-#PBS -l walltime=72:00:00 
+## give job 120 hours                        
+#PBS -l walltime=120:00:00 
 
 ## use 1 compute node and 190 cpu                                                       
 #PBS -l select=1:ncpus=190:mem=1000GB  
@@ -30,7 +30,7 @@ module load anaconda3/
 
 cd /mnt/storage/labs/martinez_nfs/ECOHAB_Kb_virus/WYaeger/analysis
 
-spades.py --memory 400 --metaviral -1 /mnt/storage/labs/martinez_nfs/ECOHAB_Kb_virus/WYaeger/analysis/bbsplit_outputs/cleanF.fq.gz -2 /mnt/storage/labs/martinez_nfs/ECOHAB_Kb_virus/WYaeger/analysis/bbsplit_outputs/cleanR.fq.gz -o /mnt/storage/labs/martinez_nfs/ECOHAB_Kb_virus/WYaeger/analysis/metaspades_1umb
+spades.py --memory 1000 --metaviral -1 /mnt/storage/labs/martinez_nfs/ECOHAB_Kb_virus/WYaeger/analysis/bbsplit_outputs/cleanF.fq.gz -2 /mnt/storage/labs/martinez_nfs/ECOHAB_Kb_virus/WYaeger/analysis/bbsplit_outputs/cleanR.fq.gz -o /mnt/storage/labs/martinez_nfs/ECOHAB_Kb_virus/WYaeger/analysis/metaspades_1umb
 echo start
 /bin/sleep 10
 echo finished
