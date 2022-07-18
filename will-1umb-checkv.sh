@@ -24,7 +24,6 @@
 
 ## jobs to submit  
 
-
 ##  for some reason this only works if you install the checkv viral reference database to your home directory first. In Terminal, run the following:
 ##      module use /mod/bigelow
 ##      module load checkv/0.9.0
