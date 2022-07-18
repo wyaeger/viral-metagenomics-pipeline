@@ -1,7 +1,8 @@
 # viral-metagenomics-pipeline
 Set of shell scripts run on the Charlie HPCC (https://charlie.bigelow.org/) to assemble and pull out viral contigs from a large file of raw metagenomic reads.
-
+------
 Pipeline Overview:
+------
 1. QC of raw metagenomic reads. Tool: FastQC (will-1umb-fastqc.sh)
 2. Illumina adapter trimming. Tool: Trimmomatic (will-1umb-trimmomatic.sh)
 3. Check quality using FastQC again to make sure Trimmomatic worked
