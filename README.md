@@ -19,11 +19,5 @@ Pipeline Overview:
 11. SAM to BAM conversion and BAM sorting. Tool: SAMtools (will-1umb-samtools.sh)
 12. Metagenome binning (consolidating contigs that are part of the same genome) using MetaBAT (will-1umb-bbmap.sh)
 -----
-13. Check genome completeness + get some taxonomic information. Tool: CheckV
-14. Host prediction:
-      a. BLAST the contigs and look at E-values for various hosts––if good, it may be a match.  
-      b. VPF-class (also does taxonomic assignment)   
-      c. DStar2?  
-      d. Host taxon predictor?      
-15. Annotation (which can help with taxonomy). Tool: DRAMv
-
+13. Check genome completeness for the viral scaffolds assembled by metaviralSPAdes. Tool: CheckV (will-1umb-checkv.sh)
+14. Taxonomic classification and host prediction for the putative viral genomes (scaffolds). Tool: VPF-class (will-unique-vpfclass.sh)
